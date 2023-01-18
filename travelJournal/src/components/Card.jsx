@@ -3,7 +3,7 @@ import { ImLocation } from "react-icons/im"
 export default function Card(props) {
   return (
     <div className="card--item">
-      <img className="card--img" src={props.item.imageUrl}></img>
+      <div className="card--img" style={{backgroundImage: `url(${props.item.imageUrl})`}}></div>
       <div className="card--content">
         <div className="card--location--section">
           <ImLocation color="#F55A5A"/>
